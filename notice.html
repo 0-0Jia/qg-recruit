@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>QG招新管理平台</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/notice.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <h2>QG招新管理平台</h2>
+        <button class="exit">退出登录</button>
+    </div>
+    <div class="sidebar">
+        <div class="title">
+            <img id="logo" src="image/qglogo.png" alt="qg-logo">
+        </div>
+        <ul class="nav">
+            <li id="register"><a href="index.html"><img src="image/register.png"><input id="about-qg" type="button"
+                        class="select" value="报名信息"></a></li>
+            <li id="result"><a href="result.html"><img src="image/result.png" class="result-img"><input id="we-input"
+                        type="button" class="select" value="考试结果"></a></li>
+            <li id="result"><a href="notice-status.html"><img src="image/templet.png" class="templet-img"><input
+                        id="we-input" type="button" class="select" value="通知状态"></a></li>
+            <li id="result"><a href="notice.html"><img src="image/notice.png" class="notice-img"><input id="we-input"
+                        type="button" class="select" value="通知模板"></a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="noticeCon">
+                <button class="create-new" click="noticeAdd">新 建</button>
+                <div class="noticeAll">
+
+                </div>
+                <ul class="noticPage"></ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/notice.js"></script>
+
+</html>

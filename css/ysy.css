@@ -1,0 +1,59 @@
+.group {
+    top:0;
+    right: 0;
+    position: absolute;
+    margin: 0 auto;
+    margin-left: 1%;
+    margin-right: 2%;
+    border-radius: 4px;
+    outline: none;
+    width: 10.5rem;
+    height: 30px;
+    float: right;
+    margin-top: 1%;
+    border-radius: 4px;
+    z-index: 10;
+}
+.group input {
+    position: absolute;
+    z-index: 1;
+    padding: 0 0 0 5%;
+    margin: 0;
+    width: 92%;
+    height: 95%;
+    outline: none;
+    border: 1px solid #c7c7c7;
+    border-radius: 4px;
+    background-color: #fff;
+    text-indent: 1rem;
+}
+.group img {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 35%;
+    right: 10%;
+    height: 30%;
+    cursor: pointer;
+}
+.group ul {
+    position: absolute;
+    z-index: 0;
+    padding-top: 15px;
+    top: 15px;
+    width: 97%;
+    border-radius: 0.3rem;
+    background-color: #fff;
+    border: 1px solid #c7c7c7;
+}
+.group ul li {
+    width: 92%;
+    padding: 0.3rem 0.5rem;
+    color: #707070;
+    font-size: 0.8rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+.group ul li:hover{
+    color: #a27bd3;
+}

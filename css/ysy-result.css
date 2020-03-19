@@ -1,0 +1,673 @@
+.result-content{
+    position: relative;
+    height: 8vh;
+    width: 96%;
+    background-color: white;
+    margin: auto;
+    margin-top: 2%;
+    border-radius: 6px;
+}
+
+.result-list{
+    margin: auto;
+    width: 96%;
+    background-color: white;
+    margin-top: 3vh;
+    border-radius: 6px;
+    padding-top: 3.5vh;
+    padding-bottom: 2rem;
+}
+
+.all-item{
+    height: 8vh;
+    width: 76vw;
+    margin: 0 auto;
+    background-color: #a27bd3;
+    margin-top: 2vh;
+}
+
+.all-item li {
+    float: left;
+    height: 8vh;
+    width: 7.6vw;
+    color: white;
+    text-align: center;
+    line-height:  8vh;
+}
+
+.choice-page-container {
+    padding-top: 5vh;
+    height: 8vh;
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+}
+
+.choice-page {
+    display: inline-block;
+    padding-top: 1vh;
+    height: 6vh;
+    width: 10.7%;
+    margin:0 auto;
+    background-color: #eee;
+    line-height: 5vh;
+    text-align: center;
+    cursor: pointer;
+}
+
+.student-information{
+    height: 8vh;
+    width: 76vw;
+    margin: auto;
+    border: 1px solid white;
+}
+
+.student-information li {
+    float: left;
+    height: 8vh;
+    width: 7.6vw;
+    background-color: white;
+    text-align: center;
+    line-height:  9vh;
+    font-size: 1vw;
+}
+
+.student-change-color input{
+    background-color: #e7e3eb;
+}
+
+.student-change-color li{
+    background-color: #e7e3eb;
+}
+
+.result-content input{
+    height: 4.2vh;
+    width: 25vh;
+    margin-top: 2vh;
+    margin-left: 2%;
+    border-radius: 4px;
+    border: 1px solid #c7c7c7;
+    outline: none;
+    padding-left: 1%;
+    line-height: 4vh;
+}
+
+.result-search-btn{
+    height: 4vh;
+    width: 7vh;
+    line-height: 4vh;
+    margin-left: 6px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background: #a27bd3;
+    color: white;
+    cursor: pointer;
+}
+.group,
+.type,
+.pass {
+    top: 2vh;
+    position: absolute;
+    margin: 0 auto;
+    margin-left: 2vw;
+    border-radius: 4px;
+    outline: none;
+    width: 25vh;
+    height: 4.2vh;
+    float: right;
+    border-radius: 4px;
+}
+.group input,
+.type input,
+.pass input {
+    position: absolute;
+    z-index: 1;
+    padding: 0 0 0 5%;
+    margin: 0;
+    width: 92%;
+    height: 94%;
+    outline: none;
+    border: 1px solid #c7c7c7;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 0.8rem;
+}
+.group img,
+.type img,
+.pass img {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 35%;
+    right: 10%;
+    height: 30%;
+    cursor: pointer;
+}
+.group ul,
+.type ul,
+.pass ul {
+    position: absolute;
+    z-index: 0;
+    padding-top: 2vh;
+    top: 2vh;
+    width: 97%;
+    border-radius: 0.3rem;
+    background-color: #fff;
+    border: 1px solid #c7c7c7;
+}
+.group ul li,
+.type ul li,
+.pass ul li{
+    width: 92%;
+    padding: 0.1rem 0.3rem;
+    color: #707070;
+    font-size: 0.55rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+.group ul li:hover,
+.type ul li:hover,
+.pass ul li:hover{
+    color: #a27bd3;
+}
+
+.submit-query-result{
+    position: absolute;
+    top:0;
+    margin-top: 2vh;
+    right: 35vh;
+    height: 4vh;
+    width: 7vh;
+    line-height: 4vh;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background: #a27bd3;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-size: 2vh;
+}
+.import {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    font-size: 1vh;
+    color: #a27bd3;
+    background: none;
+    cursor: pointer;
+    opacity: 0;
+}
+.import-result {
+    position: absolute;
+    top: 2.4vh;
+    right: 3vw;
+    font-size: 2.5vh;
+    color: #a27bd3;
+    cursor: pointer;
+}
+
+
+.show-all-stu{
+    position: absolute;
+    top:0;
+    margin-top: 2vh;
+    right: 15vh;
+    height: 4vh;
+    width: 15vh;
+    line-height: 4vh;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background: #a27bd3;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-size: 2vh;
+}
+
+.editor-input {
+    float: left;
+    height: 8vh;
+    width: 7.6vw;
+    background-color: white;
+    line-height:  8vh;
+    border: 0;
+    outline:none;
+    font-size: 1vw;
+    color: black;
+    text-align: center;
+}
+
+
+.selection-container {
+    float: left;
+    height: 8vh;
+    width: 7.6vw;
+    background-color: white;
+    line-height:  8vh;
+    border: 0;
+    outline:none;
+    font-size: 1vw;
+    color: black;
+    text-align: center;
+    line-height: 9.5vh;
+}
+
+.selection{
+    display: inline-block;
+    margin-top: 2px;
+    height: 3vh;
+    width: 1.5vw;
+    margin: auto;
+    background-image: url(../image/gou.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+    background-color: #a27bd3;
+    cursor: pointer;
+}
+
+.selection-none{
+    display: inline-block;
+    margin-top: 2px;
+    height: 3vh;
+    width: 1.5vw;
+    margin: auto;
+    background-color: #a27bd3;
+    cursor: pointer;
+}
+
+
+
+.editor-icon,.cancel-icon,.add-editor-icon,.add-cancel-icon {
+    display: inline-block;
+    cursor: pointer;
+    height: 2.5vh;
+    width: 2.5vh;
+}
+
+
+
+.add-stu-inf-container {
+    height: 6vh;
+    width: 100%;
+}
+
+.add-stu-inf-btn{
+    display: inline-block;
+    height: 100%;
+    width: 8vw;
+    background-color: #a27bd3;
+    margin-left: 1.7vw;
+    font-size: 1vw;
+    text-align: center;
+    line-height: 6vh;
+    color:white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.student-information-container{
+    height: auto;
+    width: 76vw;
+    margin: auto;
+    margin-top: 1px;
+    margin-bottom: 1rem;
+}
+
+.send-notice{
+    display: inline-block;
+    height: 100%;
+    width: 6vw;
+    background-color: #a27bd3;
+    margin-left: 61.6vw;
+    font-size: 1vw;
+    text-align: center;
+    line-height: 6vh;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.notice-model{
+    display: none;
+    position: fixed;
+    padding: 1.5rem;
+    height: 26rem;
+    width: 40rem;
+    border-radius: 10px;
+    border: 1px solid #a27bd3;
+    top: 15%;
+    left: 26%;
+    font-size: 0;
+    background-color: white;
+}
+
+.preview-container{
+    height: 2rem;
+    width: 37rem;
+}
+
+.preview-model{
+    display: inline-block;
+    border-left: 0.7rem solid #a27bd3;
+    height: 100%;
+    width: 60%;
+    line-height: 2rem;
+    font-size: 1rem;
+}
+.preview-model span {
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+.preview-model-choice{
+    display: inline-block;
+    height: 100%;
+    width: 35%;
+    border-left: 0.7rem solid #a27bd3;
+    line-height: 2rem;
+    font-size: 1rem;
+}
+.preview-model-choice span {
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+.preview-model-input-container {
+    margin: 1rem auto;
+}
+
+
+.preview-model-input{
+    outline: none;
+    padding: 0.4rem;
+    line-height: 1.5rem;
+    height: 15rem;
+    width: 53%;
+    border: 1px solid #9e9e9e;
+    background-color: white;
+    font-size: 1rem;
+    resize: none;
+}
+
+.add-stu-container{
+    display: block;
+    border-radius: 6px;
+    position: fixed;
+    height: 28rem;
+    width: 36rem;
+    background-color: white;
+    top: 15.3%;
+    left: 52%;
+    margin-left: -20rem;
+    font-size: 0;
+    z-index: 11;
+    border: solid 1.2px #a27bd3;
+}
+
+.add-header {
+    margin-bottom: 3rem;
+    height: 3.5rem;
+    width: 100%;
+    border-bottom: 1px solid rgb(167,162,162,0.5);
+    line-height: 3.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: #a27bd3;
+    color: white;
+}
+
+.add-stu-input{
+    margin: 0 auto;
+    height: 16.5rem;
+}
+
+.input-stuid-container{
+    position: relative;
+    height: 2.5rem;
+    width: 36rem;
+    margin: auto;
+    font-size: 0;
+    text-align: center;
+    line-height: 2.5rem;
+    margin-top: 0.5rem;
+}
+
+.input-stuid-container img{
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 35%;
+    right: 23%;
+    height: 30%;
+    cursor: pointer;
+}
+
+.input-stuid-container ul {
+    position: absolute;
+    z-index: 10;
+    top: 2.3rem;
+    width: 43%;
+    border-radius: 0.3rem;
+    background-color: #fff;
+    border: 1px solid #c7c7c7;
+    font-size: 1rem;
+    left: 12.7rem;
+}
+
+.input-stuid-container ul li {
+    height: 2rem;
+    line-height: 2rem;
+    cursor: pointer;
+}
+
+.stu-id{
+    display: inline-block;
+    margin-left: -1.5rem;
+    height: 2.5rem;
+    width: 18%;
+    font-size: 1rem;
+    line-height: 2.5rem;
+}
+
+input{
+    outline: none;
+}
+.stu-id-input{
+    display: inline-block;
+    padding: 0 0.5rem;
+    height: 2rem;
+    width: 40%;
+    font-size: 1rem;
+    line-height: 2.5rem;
+    border-radius: 4px;
+    border: solid 1.5px #a27bd3;
+    background-color: white;
+}
+
+.submit-btn {
+    margin-top: 0.5rem;
+    height: 3rem;
+    width: 36rem;
+    margin: auto;
+    text-align: center;
+}
+
+.close-btn{
+    display: inline-block;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    height: 2.5rem;
+    width: 5rem;
+    font-size: 1rem;
+    line-height: 2.5rem;
+    text-align: center;
+    cursor: pointer;
+    color: #a27bd3; 
+}
+
+.save-btn{
+    display: inline-block;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    height: 2.5rem;
+    width: 6rem;
+    line-height: 2.5rem;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 11rem;
+    background-color: #a27bd3;
+    color: white;
+}
+
+.delate-stu-inf{
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: 28rem;
+    cursor: pointer;
+}
+
+.choosePage{
+    height: 5rem;
+    width: 76vw;
+    margin: auto;
+    text-align: center;
+}
+
+.page {
+    display: inline-block;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 1% 1.5%;
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+    cursor: pointer;
+}
+.pageNow {
+    background-color: #a27bd3;
+}
+.page:hover {
+    background-color: #a27bd3;
+}
+
+.preview-model-container {
+    position: relative;
+    display: inline-block;
+    margin-left: 1.5rem;
+    height: 16.5rem;
+    width: 40%;
+    vertical-align: top;
+}
+
+.model-value img { 
+    position: absolute;
+    height: 35%;
+    width: 9%;
+    right: 2%;
+    top: 30%;
+    cursor: pointer;
+}
+
+.model-value {
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid #9e9e9e;
+    padding-left: 0.5rem;
+    height: 2rem;
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.model-list {
+    font-size: 1rem;
+    display: inline-block;
+    border-radius: 0 0 4px 4px;
+    padding-left: 0.5rem;
+    width: 90%;
+    margin: auto;
+    border: 1px solid #9e9e9e;
+    border-top: 0;
+    vertical-align: top;
+    cursor: pointer;
+    max-height: 14rem;
+    overflow: auto;
+}
+
+.model-list li {
+    height: 2rem;
+    line-height: 2rem;
+}
+.model-list li:hover {
+    color: #a27bd3;
+}
+
+
+.model-list::-webkit-scrollbar {
+    width: 7px;    
+}
+.model-list::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: rgba(184,184,184);
+}
+.model-list::-webkit-scrollbar-track {
+    border-bottom-right-radius: 8px;  
+    background: rgba(235,235,235);
+}
+
+.time-place-container{
+    height: 3.5rem;
+    width: 20rem;
+    font-size: 1rem;
+}
+
+.time,.place{
+    outline: none;
+    border: none;
+    margin-left: 3%;
+    border-bottom: 1px solid #9e9e9e;
+    font-size: 1rem;
+    height: 43%;
+    width: 80%;
+}
+
+.time-place {
+    position: relative;
+    width: 100%;
+}
+.send-btn{
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1rem;
+    border-radius: 4px;
+    padding: 0.3rem 1.1rem;
+    background-color: #a27bd3;
+    color: white;
+    font-size: 1rem;
+    line-height: 2rem;
+    cursor: pointer;
+    z-index: 1000000;
+}
+
+.preview-cancel {
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.remark {
+    padding: 0;
+}

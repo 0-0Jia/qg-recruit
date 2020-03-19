@@ -1,0 +1,140 @@
+body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+/*背景局部清晰*/
+.background{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../image/back.jpg") no-repeat fixed center;
+    background-size: cover;
+    box-sizing: border-box;
+}
+.background:after{
+    content: "";
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    filter: blur(3px);
+    z-index: 1;
+}
+.drag{
+    position: absolute;
+    left: 3%;
+    top: 10%;
+    width: 94%;
+    height: 80%;
+    text-align: center;
+    background: inherit;
+    z-index: 11;
+    box-shadow:  0 0 10px 6px rgba(0,0,0,.1);
+}
+h3 {
+    margin-top: 12vh;
+    font-size: 3.5vh;
+    font-weight: 550;
+}
+.line {
+    margin: 0 auto;
+    margin-top: -3%;
+    width: 13vh;
+    height: 1vh;
+    background: #5b08c3;
+}
+.loginCon {
+    position: absolute;
+    left: 64%;
+    width: 36%;
+    height: 100%;
+    background-color: white;
+}
+.loginCon input {
+    display: block;
+    margin: 6vh auto;
+    margin-bottom: 1vh;
+    padding: 0.5vh;
+    width: 37vh;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 0.1vh solid #949393;
+    font-size: 2.6vh;
+}
+#password {
+    margin-top: 2vh;
+}
+.loginCon button{
+    display: block;
+    margin: 12vh auto;
+	width: 38vh;
+	height: 7vh;
+	background-color: #5b08c3;
+	border: none;
+	outline: none;
+	font-size: 2.5vh;
+    color: #fff;
+    text-align: center;
+	letter-spacing: 2vh;
+	cursor: pointer;
+}
+input[type=checkbox] {
+    margin: 0;
+    visibility: hidden;
+}
+#rememberMe + label {
+    display: block;
+    position: absolute;
+    top: 47.5vh;
+    left: 24%;
+    width: 3vh;
+    height: 3vh;
+    border-radius: 50%;
+    background-color: #5b08c3;
+    cursor: pointer;
+}
+#rememberMe:checked + label::before {
+    display: block;
+    content: "\2714";
+    text-align: center;
+    font-size: 2vh;
+    color: white;
+}
+.loginCon p {
+    position: absolute;
+    top: 47.5vh;
+    left: 33%;
+    margin-top: 0;
+    font-size: 2.5vh;
+}
+.judge {
+    height: 3vh;
+    font-size: 2.5vh;
+}
+.qglogo {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    width: 7%;
+}
+.text {
+    position: absolute;
+    bottom: 0;
+    left: 1%;
+    font-size: 220%;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.3);
+}
+.text span {
+    display: block;
+    margin-left: 3rem;
+}

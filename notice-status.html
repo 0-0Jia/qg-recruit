@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>QG招新管理平台</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/notice-status.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <h2>QG招新管理平台</h2>
+        <button class="exit">退出登录</button>
+    </div>
+    <div class="sidebar">
+        <div class="title">
+            <img id="logo" src="image/qglogo.png" alt="qg-logo">
+        </div>
+        <ul class="nav">
+            <li id="register"><a href="index.html"><img src="image/register.png"><input id="about-qg" type="button"
+                        class="select" value="报名信息"></a></li>
+            <li id="result"><a href="result.html"><img src="image/result.png" class="result-img"><input id="we-input"
+                        type="button" class="select" value="考试结果"></a></li>
+            <li id="result"><a href="notice-status.html"><img src="image/templet.png" class="templet-img"><input
+                        id="we-input" type="button" class="select" value="通知状态"></a></li>
+            <li id="result"><a href="notice.html"><img src="image/notice.png" class="notice-img"><input id="we-input"
+                        type="button" class="select" value="通知模板"></a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="result-content" tar_id="container">
+            <input class="search" type="search" placeholder="请输入学号" style="font-size: 2vh" maxlength="10">
+
+            <div class="group" style="left: 15vw;">
+                <input class="group-value" type="text" value="全部" disabled="disabled">
+                <img src="image/xiala.png" tle="hidden">
+                <ul class="group-list" style="display: none;">
+                    <li>全部</li>
+                    <li>前端组</li>
+                    <li>后台组</li>
+                    <li>移动组</li>
+                    <li>数据挖掘组</li>
+                    <li>嵌入式组</li>
+                    <li>图形组</li>
+                    <li>设计组</li>
+                </ul>
+            </div>
+
+            <div class="type" style="left: 29.5vw;" tar_id="container">
+                <input class="type-value" type="text" value="全部" disabled="disabled">
+                <img src="image/xiala.png" tle="hidden">
+                <ul class="type-list" style="display: none;">
+                    <li>全部</li>
+                    <li>笔试</li>
+                    <li>一轮</li>
+                    <li>二轮</li>
+
+                </ul>
+            </div>
+
+            <div class="read" style="left: 44vw;" tar_id="container">
+                <input class="pass-value" type="text" value="全部" disabled="disabled">
+                <img src="image/xiala.png" tle="hidden">
+                <ul class="pass-list" style="display: none;">
+                    <li>全部</li>
+                    <li>已读</li>
+                    <li>未读</li>
+                </ul>
+            </div>
+
+            <div class="submit-query-result">提交</div>
+
+        </div>
+
+        <div class="con registerCon">
+            <div class="ulAll">
+                <ul class="th">
+                    <li>姓名</li>
+                    <li>学号</li>
+                    <li>组别</li>
+                    <li>手机号码</li>
+                    <li>类型</li>
+                    <li class="noticeLi">通知内容</li>
+                    <li>查看状态</li>
+                    <li>编辑</li>
+                </ul>
+                <span class="trAll">
+                </span>
+            </div>
+            <div class="choosePage" click="changePage">
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/notice-status.js"></script>
+
+</html>

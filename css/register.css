@@ -1,0 +1,287 @@
+.searchCon {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 2%;
+    padding: 1% 0;
+    border-radius: 6px;
+    width: 96%;
+    background: white;
+}
+.searchCon input {
+    margin: 0 auto;
+    margin-left: 2%;
+    padding: 1%;
+    border-radius: 4px;
+    border: 1px solid #c7c7c7;
+    outline: none;
+    width: 16%;
+    height: 30px;
+}
+.search {
+    margin-left: 6px;
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background: #a27bd3;;
+    color: white;
+    cursor: pointer;
+}
+
+/*标签页*/
+.labels li {
+    display: inline-block;
+    border-radius: 6px 6px 0 0;
+    padding: 1% 2%;
+    padding-top: 1%;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #e7e3eb;
+}
+.labels li:first-child {
+    background-color: white;
+}
+.choosePage {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+}
+.page {
+    display: inline-block;
+    margin-top: 3%;
+    padding: 1% 1.5%;
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+    cursor: pointer;
+}
+.pageNow {
+    background-color: #a27bd3;
+}
+.page:hover {
+    background-color: #a27bd3;
+}
+
+.registerCon {
+    position: relative;
+    margin: 0 auto;
+    padding: 2% 0;
+    border-radius: 0 6px 6px 6px;
+    width: 96%;
+    background: white;
+}
+.registerCon .increase-table {
+    margin: 1vh 3vw ;
+    margin-bottom: 2vh;
+    padding: 1vh 1vw;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background: #a27bd3;;
+    font-size: 2.7vh;
+    color: white;
+    cursor: pointer;
+}
+.registerCon .export-some-table {
+    float: right;
+    margin: 1vh 3vw ;
+    margin-bottom: 2vh;
+    padding: 1vh 1vw;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background: #a27bd3;;
+    font-size: 2.7vh;
+    color: white;
+    cursor: pointer;
+}
+.registerCon ul {
+    border-left: 0.5vw solid transparent;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0;
+}
+.registerCon .nameSpan {
+    display: inline-block;
+    margin-left: 25%;
+    margin-top: -5%;
+}
+.registerCon ul li {
+    position: relative;
+    display: inline-block;
+    padding: 2vh 0;
+    width: 10.6vw;
+    height: 3.6vh;
+    font-size: 2.3vh;
+    cursor: pointer;
+    overflow: hidden;
+}
+.registerCon .th li {
+    background-color: #a27bd3;
+    font-size: 2.5vh;
+    color: white;
+    cursor: default;
+}
+.registerCon .changeColor li {
+    background-color: #e7e3eb;
+}
+.registerCon ul li:first-child {
+    cursor: default;
+}
+.registerCon ul:hover {
+    border-left: 0.5vw solid #a27bd3;
+}
+.registerCon .th:hover {
+    border-left: 0.5vw solid transparent;
+}
+.registerCon .return {
+    display: none;
+    position: absolute;
+    right: 3vw;
+    bottom: 2vh;
+    color: #a27bd3;
+    cursor: pointer;
+    border-bottom: 0.3vh solid transparent;
+}
+.registerCon .return:hover {
+    border-bottom: 0.3vh solid #a27bd3;
+}
+
+.labels {
+    margin: 0 auto;
+    margin-top: 2.5%;
+    padding: 0;
+    font-size: 0;
+    border-radius: 6px 6px 0 0;
+    width: 96%;
+}
+
+/*学生详细报名信息*/
+.stuTable {
+    display: none;
+    margin: 0 auto;
+    padding: 2% 0;
+    border-radius: 0 6px 6px 6px;
+    width: 96%;
+    background: white;
+}
+table {
+    margin: 2% auto;
+    padding: 1%;
+}
+table td {
+    position: relative;
+    padding: 3px;
+    
+    letter-spacing: 1px;
+}
+table input {
+    border: none;
+    padding: 1%;
+    margin-right: 15px;
+    outline: none;
+    font-size: 16px;
+    width: 98%;
+    background-color: white;
+    color: rgb(138, 138, 138);
+}
+
+.changeCol {
+    background: #e6ddf0;
+}
+textarea {
+    border: none;
+    outline: none;
+    width: 98%;
+    height: 100px;
+    padding: 1%;
+    resize: none;
+    font-size: 16px;
+    color: rgb(138, 138, 138);
+    background-color: white;
+}
+.edit {
+    float: right;
+    margin-right: 2rem;
+    color: #a27bd3;
+    font-weight: 500;
+}
+
+.changeTab {
+    margin-right: 1rem;
+    padding: 0.2rem;
+    cursor: pointer;
+}
+.changeTab:hover {
+    border-bottom: 0.1rem solid #a27bd3;
+}
+
+
+.get-stu-div {
+    position: absolute;
+    border-radius: 50%;
+    left: 1vw;
+    top: 2vh;
+    background: #a27bd3;
+    width: 1.6vw;
+    height: 1.6vw;
+    color: white;
+    cursor: pointer;
+}
+
+
+.choose-sth {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+    height: 30px;
+    float: right;
+    border-radius: 4px;
+    z-index: 1;
+}
+.choose-sth input {
+    position: absolute;
+    z-index: 1;
+    padding: 0 0 0 3%;
+    margin: 0;
+    width: 80%;
+    height: 95%;
+    outline: none;
+    border: 1px solid #c7c7c7;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.choose-sth img {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 35%;
+    right: 20%;
+    height: 30%;
+    cursor: pointer;
+}
+.choose-sth ul {
+    position: absolute;
+    z-index: 0;
+    padding-top: 15px;
+    top: 15px;
+    width: 83%;
+    border-radius: 0.3rem;
+    background-color: #fff;
+    border: 1px solid #c7c7c7;
+}
+.choose-sth ul li {
+    width: 92%;
+    padding: 0.3rem 0.5rem;
+    color: #707070;
+    font-size: 0.8rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+.choose-sth ul li:hover{
+    color: #a27bd3;
+}

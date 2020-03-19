@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>QG招新管理平台</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <link rel="stylesheet" type="text/css" href="css/ysy.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <h2>QG招新管理平台</h2>
+        <button class="exit">退出登录</button>
+    </div>
+    <div class="sidebar">
+        <div class="title">
+            <img id="logo" src="image/qglogo.png" alt="qg-logo">
+        </div>
+        <ul class="nav">
+            <li id="register"><a href="index.html"><img src="image/register.png"><input id="about-qg" type="button"
+                        class="select" value="报名信息"></a></li>
+            <li id="result"><a href="result.html"><img src="image/result.png" class="result-img"><input id="we-input"
+                        type="button" class="select" value="考试结果"></a></li>
+            <li id="result"><a href="notice-status.html"><img src="image/templet.png" class="templet-img"><input
+                        id="we-input" type="button" class="select" value="通知状态"></a></li>
+            <li id="result"><a href="notice.html"><img src="image/notice.png" class="notice-img"><input id="we-input"
+                        type="button" class="select" value="通知模板"></a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="searchCon">
+                <input class="idInput" type="search" placeholder="请输入学号">
+                <button class="search">搜索</button>
+
+                <div class="group">
+                    <input class="group-value" type="text" value="全部" disabled="disabled">
+                    <img src="image/xiala.png" tle="hidden">
+                    <ul class="group-list" style="display: none;">
+                        <li>全部</li>
+                        <li>前端组</li>
+                        <li>后台组</li>
+                        <li>移动组</li>
+                        <li>数据挖掘组</li>
+                        <li>嵌入式组</li>
+                        <li>图形组</li>
+                        <li>设计组</li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="labels">
+                <li title="1">报名学生</li>
+                <li title="2">学生详细信息</li>
+            </ul>
+            <!-- 报名学生 -->
+            <div class="con1 registerCon">
+                <button class="increase-table">新 增</button>
+                <button class="export-some-table">导出报名信息</button>
+                <div class="ulAll">
+                    <ul class="th">
+                        <li>姓名</li>
+                        <li>学号</li>
+                        <li>性别</li>
+                        <li>组别</li>
+                        <li>年级</li>
+                        <li>专业班级</li>
+                        <li>手机号码</li>
+                    </ul>
+                    <span class="trAll">
+                    </span>
+                </div>
+                <div class="choosePage">
+                </div>
+                <div class="return">返回</div>
+            </div>
+            <div class="con2 stuTable">
+                <table cellspacing="6px">
+                    <tr>
+                        <td class="changeCol">姓名</td>
+                        <td><input></td>
+                        <td class="changeCol">性别</td>
+                        <td><input></td>
+                    </tr>
+                    <tr>
+                        <td class="changeCol">年龄</td>
+                        <td><input></td>
+                        <td class="changeCol">宿舍</td>
+                        <td><input></td>
+                    </tr>
+                    <tr>
+                        <td class="changeCol">QQ</td>
+                        <td><input></td>
+                        <td class="changeCol">邮箱</td>
+                        <td><input></td>
+                    </tr>
+                    <tr>
+                        <td class="changeCol">手机</td>
+                        <td><input></td>
+                        <td class="changeCol">学号</td>
+                        <td><input></td>
+                    </tr>
+                    <tr>
+                        <td class="changeCol">年级</td>
+                        <td><input></td>
+                        <td class="changeCol">专业班级</td>
+                        <td><input></td>
+                    </tr>
+                    <tr>
+                        <td class="changeCol">班级职务</td>
+                        <td><input></td>
+                        <td class="changeCol">挂科</td>
+                        <td><input></td>
+                    </tr>
+                    <tr>
+                        <td class="changeCol">绩点（大一上学期）</td>
+                        <td><input></td>
+                        <td class="changeCol">上学期班级排名</td>
+                        <td><input></td>
+                    </tr>
+                    <tr>
+                        <td class="changeCol">C理论成绩</td>
+                        <td><input></td>
+                        <td class="changeCol">C实验成绩</td>
+                        <td><input></td>
+                    </tr>
+                    <tr>
+                        <td class="changeCol">高数成绩</td>
+                        <td><input></td>
+                        <td class="changeCol">英语（1）成绩</td>
+                        <td><input></td>
+                    </tr>
+                    <tr>
+                        <td class="changeCol">特长、爱好</td>
+                        <td colspan="3"><input></td>
+                    </tr>
+                    <tr>
+                        <td class="changeCol">座右铭</td>
+                        <td colspan="3"><input></td>
+                    </tr>
+                    <tr>
+                        <td class="changeCol" colspan="4">参加其它学生科技团队、普通社团情况说明</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><textarea></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="changeCol" colspan="4">参加其它学生科技团队、普通社团情况说明</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><textarea></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="changeCol" colspan="4">是否组队报名，是则填写同组别同学姓名（3人及3人以内）</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><textarea></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="changeCol" colspan="4">奖惩情况和实践经历（社会实践或计算机相关技术学习掌握情况）</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><textarea></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="changeCol" colspan="4">自我评价</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><textarea></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="changeCol" colspan="4">简述能体现以下四个方面的个人事件：善于协作、刻苦努力、甘于奉献、持之以恒</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><textarea></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="changeCol" colspan="4">请说一下大学四年的个人规划以及为什么希望加入QG工作室</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><textarea></textarea></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/register.js"></script>
+    <script type="text/javascript" src="js/query.js"></script>
+</body>
+
+
+</html>

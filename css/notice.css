@@ -1,0 +1,105 @@
+.content {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 2%;
+    padding: 1% 0;
+    border-radius: 6px;
+    width: 96%;
+    background: white;
+}
+
+.noticeCon {
+    margin: 1rem;
+}
+.create-new {
+    display: block;
+    border: 1px;
+    border-radius: 4px;
+    padding: 0.6rem 1rem;
+    background-color: #a27bd3;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.noticeAll {
+    margin: 2rem 1rem;
+}
+.noticeDiv {
+    display: inline-block;
+    position: relative;
+    margin-left: 1.6%;
+    margin-bottom: 2%;
+    width: 31%;
+    height: 18rem;
+    background-color: #e6ddf0;
+    text-align: center;
+}
+.noticeDiv img{
+    display: block;
+    position: absolute;
+    top: 0.2rem;
+    right: 0.2rem;
+    width: 1rem;
+    cursor: pointer;
+}
+textarea {
+    margin: 8% auto;
+    margin-bottom: 2%;
+    padding: 5%;
+    width: 78%;
+    height: 50%;
+    resize: none;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    text-indent: 2rem;
+    background-color: rgba(250,250,250,0.9);
+}
+.noticeDiv input {
+    padding: 2% 0;
+    width: 88%;
+    height: 8%;
+    outline: none;
+    border: none;
+    text-align: center;
+    background-color: rgba(250,250,250,0.9);
+}
+.edit-button {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 1rem;
+    outline: none;
+    border: 1px;
+    border-radius: 4px;
+    padding: 0.3rem 0.5rem;
+    background-color: #a27bd3;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.save-button {
+    display: none;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 1rem;
+    border: 1px;
+    border-radius: 4px;
+    padding: 0.3rem 0.5rem;
+    background-color: #a27bd3;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.noticPage {
+    height: 2rem;
+    text-align: center;
+}
+.noticPage li {
+    display: inline-block;
+    padding: 0.3rem 1.2rem;
+    cursor: pointer;
+}
+.noticPage .onPage,
+.noticPage li:hover {
+    background-color: #a27bd3;
+}

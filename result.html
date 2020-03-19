@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>QG招新管理平台</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/ysy-result.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <h2>QG招新管理平台</h2>
+        <button class="exit">退出登录</button>
+    </div>
+    <div class="sidebar">
+        <div class="title">
+            <img id="logo" src="image/qglogo.png" alt="qg-logo">
+        </div>
+        <ul class="nav">
+            <li id="register"><a href="index.html"><img src="image/register.png"><input id="about-qg" type="button"
+                        class="select" value="报名信息"></a></li>
+            <li id="result"><a href="result.html"><img src="image/result.png" class="result-img"><input id="we-input"
+                        type="button" class="select" value="考试结果"></a></li>
+            <li id="result"><a href="notice-status.html"><img src="image/templet.png" class="templet-img"><input
+                        id="we-input" type="button" class="select" value="通知状态"></a></li>
+            <li id="result"><a href="notice.html"><img src="image/notice.png" class="notice-img"><input id="we-input"
+                        type="button" class="select" value="通知模板"></a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="result-content" tar_id="container">
+            <input type="search" placeholder="请输入学号" style="font-size: 2vh" maxlength="10">
+
+            <div class="group" style="left: 15vw;">
+                <input class="group-value" type="text" value="全部" disabled="disabled">
+                <img src="image/xiala.png" tle="hidden">
+                <ul class="group-list" style="display: none;">
+                    <li>全部</li>
+                    <li>前端组</li>
+                    <li>后台组</li>
+                    <li>移动组</li>
+                    <li>数据挖掘组</li>
+                    <li>嵌入式组</li>
+                    <li>图形组</li>
+                    <li>设计组</li>
+                </ul>
+            </div>
+
+            <div class="type" style="left: 29.5vw;" tar_id="container">
+                <input class="type-value" type="text" value="全部" disabled="disabled">
+                <img src="image/xiala.png" tle="hidden">
+                <ul class="type-list" style="display: none;">
+                    <li>全部</li>
+                    <li>笔试</li>
+                    <li>一轮</li>
+                    <li>二轮</li>
+
+                </ul>
+            </div>
+
+            <div class="pass" style="left: 44vw;" tar_id="container">
+                <input class="pass-value" type="text" value="全部" disabled="disabled">
+                <img src="image/xiala.png" tle="hidden">
+                <ul class="pass-list" style="display: none;">
+                    <li>全部</li>
+                    <li>通过</li>
+                    <li>未通过</li>
+                </ul>
+            </div>
+
+            <div class="submit-query-result">提交</div>
+            <div class="import-result">导入成绩信息</div>
+            <input type="file" class="import"></input>
+
+            <!-- <div class="show-all-stu">查询所有学生</div> -->
+        </div>
+
+        <div class="result-list">
+            <div class="add-stu-inf-container">
+                <div class="add-stu-inf-btn">
+                    添加成绩信息
+                </div>
+                <div class="send-notice">发送通知</div>
+            </div>
+            <ul class="all-item">
+                <li>学号</li>
+                <li>姓名</li>
+                <li>性别</li>
+                <li>笔试成绩</li>
+                <li>评价</li>
+                <li>类型</li>
+                <li>是否通过</li>
+                <li>组别</li>
+                <li>勾选框</li>
+                <li>编辑</li>
+            </ul>
+
+            <div class="student-information-container">
+
+            </div>
+
+            <div class="choosePage">
+            </div>
+        </div>
+    </div>
+
+    <div class="add-stu-container" style="display: none">
+        <div class="add-header">
+            添加成绩信息
+        </div>
+        <div class="add-stu-input">
+            <div class="input-stuid-container">
+                <div class="stu-id">学生学号</div>
+                <input class="stu-id-input" placeholder="学生学号" maxlength="10">
+            </div>
+
+            <div class="input-stuid-container">
+                <div class="stu-id">学生成绩</div>
+                <input class="stu-id-input" placeholder="学生成绩" maxlength="4">
+            </div>
+
+            <div class="input-stuid-container">
+                <div class="stu-id">考试评价</div>
+                <input class="stu-id-input" placeholder="学生评价">
+            </div>
+
+            <div class="input-stuid-container">
+                <div class="stu-id">类型</div>
+                <input class="stu-id-input" type="text" placeholder="选择考试类型" disabled="disabled" value="">
+                <img src="image/xiala.png" tle="hidden">
+                <ul class="group-list" style="display: none;">
+                    <li>笔试</li>
+                    <li>一轮</li>
+                    <li>二轮</li>
+                </ul>
+            </div>
+
+            <div class="input-stuid-container">
+                <div class="stu-id">是否通过</div>
+                <input class="stu-id-input" type="text" placeholder="是否通过" disabled="disabled" value="">
+                <img src="image/xiala.png" tle="hidden">
+                <ul class="group-list" style="display: none;">
+                    <li>未通过</li>
+                    <li>通过</li>
+                </ul>
+            </div>
+
+            <!-- <div class="input-stuid-container">
+                <div class="stu-id">组别</div>
+                <input class="stu-id-input" placeholder="组别" maxlength="5">
+            </div>   -->
+
+        </div>
+        <div class="submit-btn">
+            <div class="close-btn">关闭</div>
+            <div class="save-btn">保存</div>
+        </div>
+    </div>
+
+    <!-- 预览模板部分 -->
+    <div class="notice-model" style="display: none">
+        <div class="preview-container">
+            <div class="preview-model">
+                <span>预览模板</span>
+            </div>
+            <div class="preview-model-choice">
+                <span>通知模板选择</span>
+            </div>
+        </div>
+        <div class="preview-model-input-container">
+            <textarea class="preview-model-input" disabled></textarea>
+            <div class="preview-model-container">
+                <div class="model-value" model_num="0">
+                    请选择一种模板
+                    <img src="image/xiala.png" tle="hidden">
+                </div>
+                <ul class="model-list" style="display: none;">
+                </ul>
+            </div>
+        </div>
+        <div class="time-place">
+            <div class="time-place-container">
+                时间 :
+                <input class="time">
+            </div>
+            <div class="time-place-container">
+                地点 :
+                <input class="place">
+            </div>
+            <div class="send-btn">发送</div>
+        </div>
+        <img src="image/deleteStu.png" class="preview-cancel"></img>
+    </div>
+
+
+</body>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/result.js"></script>
+<script type="text/javascript" src="js/preview.js"></script>
+<!-- <script type="text/javascript" src="js/query.js"></script> -->
+
+</html>
